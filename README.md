@@ -4,7 +4,7 @@ Podcast app integrated with the audioboom API to learn Next.JS
 
 ![Captura de la App](./.readme-static/captura.png)
 
-<!-- [Ver la aplicacion]() -->
+[Ver la aplicacion](https://podcast.surucobe.now.sh/)
 
 ## ¿How does it work?
 
