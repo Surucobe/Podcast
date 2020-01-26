@@ -10,17 +10,14 @@ export default class Series extends React.Component {
         <h2>Series</h2>
         <ul className="series-list-container">
           {arr.map((item) => (
-            <Link href={`/podcast?id=${ item.id }`} key={ item.id }>
-              <a onClick={ event => onClickPodcast(event, item) } >
-                <li className="series-list-item" >
-                  <img className="item-image" src={item.urls.image} alt=""/>
-                  <p>
-                    <strong> { item.title } </ strong>
-                    { Math.ceil(item.duration / 60) } Minutes
-                  </p>
-                </li>
-              </a>
-            </Link>
+            <li className="series-list-item" >
+              <img className="item-image" src={item.urls.image} alt=""/>
+              <p>
+                <strong> { item.title } </ strong>
+                { Math.ceil(item.duration / 60) } Minutes
+              </p>
+              <button onClick={ event => onClickPodcast() } > Play </button>
+            </li>
             ))
           }
         </ul>
@@ -68,9 +65,16 @@ export default class Series extends React.Component {
               flex-direction: column;
               margin: 0;
             }
-            a{
+            li{
+              vertical-align: center;
               border-bottom: 1px solid black;
               width: auto;
+            }
+            button{
+              background-color: red;
+              padding: 15px;
+              border: 0;
+              border-radius: 8px;
             }
           `}</style>
       </React.Fragment>
