@@ -7,16 +7,18 @@ export default class Series extends React.Component {
     
     return(
       <React.Fragment>
-        <h2>Series</h2>
         <ul className="series-list-container">
+        <h2>Series</h2>
           {arr.map((item) => (
             <li className="series-list-item" >
-              <img className="item-image" src={item.urls.image} alt=""/>
-              <p>
-                <strong> { item.title } </ strong>
-                { Math.ceil(item.duration / 60) } Minutes
-              </p>
-              <button onClick={ event => onClickPodcast() } > Play </button>
+              <div className="li-conatiner" >
+                <img className="item-image" src={item.urls.image} alt=""/>
+                <p>
+                  <strong> { item.title } </ strong>
+                  { Math.ceil(item.duration / 60) } Minutes
+                </p>
+              </div>
+              <button onClick={ event => onClickPodcast(event, item) } > Play </button>
             </li>
             ))
           }
@@ -37,7 +39,6 @@ export default class Series extends React.Component {
               font-weight: 600;
               margin: 0;
               color: whitesmoke;
-              text-align: center;
             }
             h4{
               color: black;
@@ -48,10 +49,12 @@ export default class Series extends React.Component {
               margin-right: 15px;
             }
             .series-list-container{
+              width: ;
               display: grid;
-              grid-template-columns: 750px;
+              grid-template-columns: 450px;
               grid-row-gap: 12px;
-              justify-content: center;
+              justify-content: flex-start;
+              padding-left: 20px;
             }
             .series-list-item {
             height: 55px;
@@ -65,12 +68,16 @@ export default class Series extends React.Component {
               flex-direction: column;
               margin: 0;
             }
+            .li-conatiner{
+              display: flex;
+            }
             li{
-              vertical-align: center;
+              justify-content: space-between;
               border-bottom: 1px solid black;
               width: auto;
             }
             button{
+              cursor: pointer;
               background-color: red;
               padding: 15px;
               border: 0;
