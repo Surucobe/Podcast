@@ -11451,7 +11451,7 @@ function (_React$Component) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/_next/static/images/stars-1d17360a685ac86023b90aa14fd2c62d.svg";
+module.exports = "/_next/static/images/stars-0abcdfcd1e323649a0338a204fe8b853.svg";
 
 /***/ }),
 

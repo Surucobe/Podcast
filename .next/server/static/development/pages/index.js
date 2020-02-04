@@ -88,7 +88,11 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
+<<<<<<< HEAD
 /******/ 	return __webpack_require__(__webpack_require__.s = 5);
+=======
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+>>>>>>> testing
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2172,7 +2176,11 @@ module.exports = routes().add('index').add('channel', '/:slug.:id', 'channel').a
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 5:
+=======
+/***/ 3:
+>>>>>>> testing
 /*!*******************************!*\
   !*** multi ./pages/index.jsx ***!
   \*******************************/

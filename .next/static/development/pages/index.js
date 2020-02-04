@@ -11790,7 +11790,11 @@ module.exports = routes().add('index').add('channel', '/:slug.:id', 'channel').a
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 2:
+=======
+/***/ 0:
+>>>>>>> testing
 /*!*******************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5CMarlon%5CDownloads%5CCoding%5Cjs_projects%5Cpodcast%5Cpages%5Cindex.jsx ***!
   \*******************************************************************************************************************************************************/
@@ -11813,5 +11817,9 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
+<<<<<<< HEAD
 },[[2,"static/runtime/webpack.js"]]]);
+=======
+},[[0,"static/runtime/webpack.js"]]]);
+>>>>>>> testing
 //# sourceMappingURL=index.js.map
