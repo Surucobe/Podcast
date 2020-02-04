@@ -6,11 +6,12 @@ export default class Series extends React.Component {
     const { arr, onClickPodcast } = this.props
     
     return(
-      <React.Fragment>
-        <ul className="series-list-container">
+      <>
+      <div className="series-container">
         <h2>Series</h2>
+        <ul className="series-list-container">
           {arr.map((item) => (
-            <li className="series-list-item" >
+            <li className="series-list-item" key={item.id}>
               <div className="li-conatiner" >
                 <img className="item-image" src={item.urls.image} alt=""/>
                 <p>
@@ -23,6 +24,7 @@ export default class Series extends React.Component {
             ))
           }
         </ul>
+      </div>
 
           <style jsx>{`
             header{
@@ -71,6 +73,10 @@ export default class Series extends React.Component {
             .li-conatiner{
               display: flex;
             }
+            .series-container{
+              display: grid;
+              justify-content: center;
+            }
             li{
               justify-content: space-between;
               border-bottom: 1px solid black;
@@ -84,7 +90,7 @@ export default class Series extends React.Component {
               border-radius: 8px;
             }
           `}</style>
-      </React.Fragment>
+      </>
     )
   }
 }
