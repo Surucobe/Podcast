@@ -1,12 +1,14 @@
 import { withRouter } from 'next/router'
 
+import stars from '../public/static/stars.svg'
+
 export default class Podacst extends React.Component{
   render() {
     const { onClose, clip } = this.props
 
     return(
-      <React.Fragment>
-        <div className="podcast-container">
+      <>
+        <div className="podcast-container" style={{ backgroundImage: `url(${stars})` }}>
           <a onClick={ onClose } className="close" > Back </a>
 
             <img src={ clip.urls.image || clip.urls.wave_img } 
@@ -33,6 +35,7 @@ export default class Podacst extends React.Component{
               align-items: center;
               justify-content: center;
               position: relative;
+              background-color: #000;
             }
             .close{
               justify-self: left;
@@ -51,7 +54,7 @@ export default class Podacst extends React.Component{
               cursor: pointer;
             }
           `}</style>
-      </React.Fragment>
+      </>
     )
   }
 }

@@ -28,6 +28,7 @@ export default class Podacst extends React.Component{
               flex-direction: column;
               align-items: center;
               justify-content: space-between;
+              background-color: #000;
             }
             audio{
               outline: 0;
